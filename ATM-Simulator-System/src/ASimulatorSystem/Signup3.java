@@ -2,6 +2,7 @@
 package ASimulatorSystem;
 
 import java.awt.*;
+
 import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
@@ -17,7 +18,7 @@ public class Signup3 extends JFrame implements ActionListener{
     Signup3(String formno){
         this.formno = formno;
         setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 3");
-    
+         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("ASimulatorSystem/icons/logo.jpg"));
         Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -235,7 +236,7 @@ public class Signup3 extends JFrame implements ActionListener{
         
         String facility = "";
         if(c1.isSelected()){ 
-            facility = facility + " ATM Card";
+            facility = facility + " ATM Card";   
         }
         if(c2.isSelected()){ 
             facility = facility + " Internet Banking";
